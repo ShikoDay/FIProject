@@ -40,7 +40,7 @@ export default {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         this.users = data.results;
       });
   },
