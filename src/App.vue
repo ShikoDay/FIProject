@@ -1,5 +1,5 @@
 <template>
-  <div id="before-load">Идёт загрузка...</div>
+  <div v-if="users.length === 0" id="before-load">Идёт загрузка...</div>
   <h2>Карточки пользователей</h2>
   <div id="app">
     <div class="card" v-for="user in users" :key="user.id.value">
